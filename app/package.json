@@ -1,0 +1,9 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "main": "./src/index.ts",
+    "dependencies": {
+        "arg": "^5.0.1",
+        "sys": "workspace:^"
+    }
+}

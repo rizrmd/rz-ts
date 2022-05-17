@@ -1,0 +1,19 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "TS Project Template",
+  "private": true,
+  "keywords": [],
+  "scripts": {
+    "dev": "pnpm tsx watch ./sys/src/index",
+    "start": "pnpm tsx watch ./sys/src/index",
+    "build": "rm -rf build && pnpm esbuild sys/src/index.ts --bundle --platform=node --outfile=build/app.js && pkg build/app.js --out-path=build && rm build/app.js"
+  },
+  "author": "Rizky Ramadhan",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "^0.14.39",
+    "esbuild-runner": "^2.2.1",
+    "tsx": "^2.1.0"
+  }
+}

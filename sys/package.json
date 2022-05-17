@@ -1,0 +1,10 @@
+{
+    "name": "sys",
+    "version": "1.0.0",
+    "dependencies": {
+        "app": "workspace:^",
+        "arg": "^5.0.1",
+        "fastify": "^3.29.0",
+        "fs-extra": "^10.1.0"
+    }
+}
