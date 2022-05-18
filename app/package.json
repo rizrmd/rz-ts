@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "main": "./src/index.ts",
     "dependencies": {
+        "@types/node": "^17.0.34",
         "arg": "^5.0.1",
         "sys": "workspace:^"
     }
