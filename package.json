@@ -7,8 +7,7 @@
   "scripts": {
     "dev": "node sys/tsx/dist/cli.js watch ./sys/server/src/index",
     "start": "node sys/tsx/dist/cli.js watch ./sys/server/src/index",
-    "prod": "node sys/tsx/dist/cli.js ./sys/server/src/index",
-    "bundle": "rm -rf build && pnpm esbuild sys/server/src/index.ts --bundle --platform=node --outfile=build/app.js && pkg build/app.js --out-path=build && rm build/app.js"
+    "prod": "node sys/tsx/dist/cli.js ./sys/server/src/index"
   },
   "author": "Rizky Ramadhan",
   "license": "MIT",
