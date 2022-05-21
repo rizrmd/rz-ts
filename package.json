@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "absensi",
   "version": "1.0.0",
   "description": "TS Project Template",
   "private": true,
@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node sys/tsx/dist/cli.js watch ./sys/server/src/index",
     "start": "node sys/tsx/dist/cli.js watch ./sys/server/src/index",
-    "prod": "node sys/tsx/dist/cli.js ./sys/server/src/index"
+    "prod": "node sys/tsx/dist/cli.js ./sys/server/src/index",
+    "build": "node sys/tsx/dist/cli.js ./sys/server/src/build"
   },
   "author": "Rizky Ramadhan",
   "license": "MIT",
