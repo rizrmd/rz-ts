@@ -14,7 +14,7 @@ export type Config = {
 export type FingerConfig = {
   lokasi: string;
   serial_number: string;
-  type: "h-101";
+  type: "x100c";
   ip: string;
   username: string;
   password: string;
@@ -40,16 +40,15 @@ export const prepareConfig = async () => {
         password: "",                 //password user nya
     },
     mesin: [
-        // mesin absensi yg digunakan, bisa diisi banyak mesin,
-        // copy terus di kasih koma (,)
+        // mesin absensi yg digunakan, bisa diisi banyak mesin
         {
             lokasi: "pintu masuk",        // lokasi mesin absensi nya
             serial_number: "999999999",   // serial number mesin
-            type: "x-100c",               // "x-100c"
+            type: "x100c",                // tipe mesin: "x100c"
             ip: "192.168.1.99",           // ip mesin 
             username: "1",                // user untuk login ke url mesin
             password: "1",                // pass untuk login ke url mesin
-            jam_kirim: ["15.30", "08.40"],// jam kirim ke url server
+            jam_kirim: ["07.30", "15.40"],// jam kirim ke url server
         },
     ],
 }
