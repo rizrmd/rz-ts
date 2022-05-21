@@ -14,7 +14,14 @@ import { exec } from "pkg";
   await esbuild.build({
     entryPoints: [join(process.cwd(), "sys", "server", "src", "index.ts")],
     bundle: true,
+    platform: "node",
     outfile,
   });
-  await exec(["-t", "node16", outfile, "--output", outdir]);
+  await exec([
+    "-t",
+    "node16-win-x64,node16-macos-arm64",
+    outfile,
+    "--out-path",
+    outdir,
+  ]);
 })();

@@ -1,7 +1,8 @@
-import { prepareConfig } from "./config";
 import { CronJob } from "cron";
-import { kirimAbsen } from "./kirim-absen";
 import { bacaAbsen } from "./baca-absen";
+import { prepareConfig } from "./config";
+import { kirimAbsen } from "./kirim-absen";
+
 export const main = async () => {
   const config = await prepareConfig();
   const crons = {} as Record<string, CronJob[]>;
